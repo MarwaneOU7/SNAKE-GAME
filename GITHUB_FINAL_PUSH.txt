@@ -1,0 +1,195 @@
+╔════════════════════════════════════════════════════════════════╗
+║         🚀 FINAL SETUP - CREATE GITHUB REPO NOW 🚀             ║
+║              3 Easy Steps to Get Code Online                   ║
+╚════════════════════════════════════════════════════════════════╝
+
+YOUR INFORMATION
+═══════════════════════════════════════════════════════════════
+GitHub Username: MarouanOU7
+Team Members: Hamza Tahiri, Driss Kerbal
+Repository Name: Snake-Game
+Status: READY TO UPLOAD ✓
+
+
+⚡ QUICKEST PATH (5 minutes)
+═══════════════════════════════════════════════════════════════
+
+1️⃣ CREATE THE REPOSITORY ON GITHUB
+   
+   Go to: https://github.com/new
+   
+   Fill in:
+     • Repository name: Snake-Game
+     • Description: "Classic Snake game built in C with zero dependencies"
+     • Visibility: ⦿ Public
+     • Skip all other options (we have our own README)
+   
+   Click: "Create repository"
+
+2️⃣ RUN THIS COMMAND IN YOUR TERMINAL
+   
+   cd "C:\Users\Marouan\PRJCT JEUX 11\Snake"
+   git push -u origin main
+
+3️⃣ DONE! YOUR CODE IS ON GITHUB
+   
+   It will appear at:
+   https://github.com/MarouanOU7/Snake-Game
+
+
+═══════════════════════════════════════════════════════════════
+DETAILED INSTRUCTIONS
+═══════════════════════════════════════════════════════════════
+
+STEP 1: CREATE REPOSITORY ON GITHUB (2 minutes)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Go to: https://github.com/new
+   (or click + icon → New repository)
+
+2. Fill in the form EXACTLY like this:
+
+   Repository name: Snake-Game
+   ☐ Description: Classic Snake game built in C with zero dependencies
+   ⦿ Public
+   ☐ Add a README file (LEAVE UNCHECKED - we have one)
+   ☐ Add .gitignore (LEAVE UNCHECKED - we have one)
+   ☐ Choose a license (SKIP THIS)
+
+3. Click: "Create repository" button
+
+4. You'll see a page with instructions
+   (Ignore them - use ours below!)
+
+5. GitHub now shows: "Quick setup using HTTPS"
+   Copy the URL: https://github.com/MarouanOU7/Snake-Game.git
+
+
+STEP 2: PUSH YOUR CODE (1 minute)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Open Command Prompt or PowerShell:
+
+   cd "C:\Users\Marouan\PRJCT JEUX 11\Snake"
+
+Then paste this command:
+
+   git push -u origin main
+
+It will ask:
+   GitHub username: MarouanOU7
+   Password: [Your GitHub password or token]
+
+Enter your credentials and push!
+
+(First time may ask for authentication - that's normal)
+
+
+STEP 3: VERIFY IT WORKED (1 minute)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Go to: https://github.com/MarouanOU7/Snake-Game
+
+2. You should see:
+   ✓ Your code files
+   ✓ README.md visible
+   ✓ All source files
+   ✓ 8 commits in history
+
+3. Click on files to preview them
+   (Everything should be there!)
+
+
+═══════════════════════════════════════════════════════════════
+ADD YOUR TEAM MEMBERS (5 minutes)
+═══════════════════════════════════════════════════════════════
+
+Now add Hamza and Driss as collaborators:
+
+1. Go to: https://github.com/MarouanOU7/Snake-Game/settings/access
+
+2. Click: "Add people" (green button)
+
+3. For each teammate:
+   • Type their GitHub username
+   • Click to select them
+   • Choose role: "Maintain" or "Write"
+   • Send invitation
+
+4. They get email invitation to join!
+
+
+═══════════════════════════════════════════════════════════════
+WHAT TO DO NEXT
+═══════════════════════════════════════════════════════════════
+
+✓ After GitHub push is done:
+
+1. Record demo video
+   Read: VIDEO_RECORDING_GUIDE.txt
+   Time: ~20 minutes
+   Result: demo.mp4
+
+2. Prepare presentation
+   Read: PRESENTATION_SCRIPT.txt
+   Time: ~30 minutes
+   Result: Ready to present
+
+3. Practice presentation
+   Time: ~20 minutes
+   Result: Polished, professional delivery
+
+4. Deliver to class (by 06/04/2026)
+   Demo video + Presentation
+
+
+═══════════════════════════════════════════════════════════════
+COMMON ISSUES
+═══════════════════════════════════════════════════════════════
+
+"Repository not found"
+  → Make sure you created it on GitHub first!
+  → Check GitHub shows Snake-Game at your account
+
+"Authentication failed"
+  → Use GitHub Personal Access Token instead:
+    1. Go: https://github.com/settings/tokens
+    2. Create new token (copy it)
+    3. Use token as the password (NOT your GitHub password)
+
+"fatal: The remote end hung up unexpectedly"
+  → Just try again! Sometimes network hiccup
+  → Or wait 30 seconds and retry
+
+"My files aren't showing"
+  → Refresh the GitHub page (F5)
+  → Wait 10 seconds for it to load
+  → Check you're in the right repository
+
+
+═══════════════════════════════════════════════════════════════
+YOU'RE ALMOST THERE!
+═══════════════════════════════════════════════════════════════
+
+Status: 85% → 100% after GitHub push
+
+Remaining work:
+  ✓ Push to GitHub (5 min - you're about to do this)
+  ✓ Record video (20 min - guide included)
+  ✓ Presentation (30 min - script included)
+  ✓ Delivery (practice then present)
+
+CONFIDENCE LEVEL: VERY HIGH ✓✓✓
+
+You have all the materials. Time to finish strong!
+
+═══════════════════════════════════════════════════════════════
+
+READY? HERE'S YOUR COMMAND (Copy & Paste):
+
+1. Open terminal/CMD
+2. Paste: cd "C:\Users\Marouan\PRJCT JEUX 11\Snake"
+3. Then: git push -u origin main
+4. Done!
+
+═══════════════════════════════════════════════════════════════

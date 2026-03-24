@@ -1,0 +1,271 @@
+╔═══════════════════════════════════════════════════════════════╗
+║   SNAKE GAME PROJECT - DELIVERY TIMELINE                      ║
+║   Deadline: 06/04/2026 (13 Days)                             ║
+╚═══════════════════════════════════════════════════════════════╝
+
+✅ COMPLETED (Status: 70%)
+═══════════════════════════════════════════════════════════════
+
+  ✓ Game developed in C (374 lines)
+  ✓ Console version compiled and working
+  ✓ No memory leaks (tested with ASAN flags)
+  ✓ Cross-platform compatible
+  ✓ README documentation complete
+  ✓ Code structured and modular
+  ✓ Git repository initialized locally
+  ✓ All files staged and committed
+
+
+🔄 IN PROGRESS (This Week)
+═══════════════════════════════════════════════════════════════
+
+  ⏳ Push to GitHub
+     Status: Ready to push, need GitHub account setup
+     Time: ~10 minutes
+     Action: Follow GITHUB_SETUP_GUIDE.txt
+
+  ⏳ Add team members
+     Status: Depends on GitHub push
+     Time: ~5 minutes per member
+     Action: GitHub Settings → Collaborators
+
+  ⏳ Test game thoroughly
+     Status: Quick testing done, needs full QA
+     Time: ~30 minutes
+     Action: 
+       - Test all controls
+       - Verify high scores track
+       - Check collision detection
+       - Test on different terminals
+
+
+🎥 DUE THIS WEEK (Before 03/31)
+═══════════════════════════════════════════════════════════════
+
+  🎬 DEMO VIDEO (5-10 minutes)
+     Description: Show the game in action
+     What to record:
+       1. Game startup and menu
+       2. Gameplay (eating food, growing, scoring)
+       3. Game over and restart
+       4. Brief code walkthrough (30 seconds)
+       5. GitHub repository view
+
+     Tools: OBS Studio (free) or Windows Game Bar (built-in)
+     Format: MP4 or WebM
+     Where to save: Project folder → video.mp4
+
+     Instructions:
+       Step 1 - Start recording
+       Step 2 - Run: .\build\snake_console.exe
+       Step 3 - Play 2-3 rounds (show good and bad gameplay)
+       Step 4 - Show GitHub repository
+       Step 5 - Stop recording
+
+📊 PRESENTATION (Prepare by 04/05)
+═══════════════════════════════════════════════════════════════
+
+  🎤 Presentation Outline (10-15 minutes)
+     
+     INTRO (1-2 min):
+       "Our project is a classic Snake game built from scratch in C"
+       "Fully functional console-based version with no dependencies"
+       "Demonstrates core C concepts: arrays, structures, algorithms"
+
+     OVERVIEW (2-3 min):
+       - Project scope & features
+       - Team composition
+       - Development timeline
+
+     TECHNICAL DETAILS (3-4 min):
+       - Architecture & code structure
+       - Key algorithms (collision detection, movement)
+       - Memory management (zero dynamic allocation)
+       - Game mechanics & scoring
+
+     DEMONSTRATION (1-2 min):
+       - Show the game running
+       - Play a quick round
+       - Highlight control responsiveness
+
+     CHALLENGES & SOLUTIONS (1-2 min):
+       - What was hard (if anything)
+       - How you solved it
+       - What you learned
+
+     FUTURE IMPROVEMENTS (1 min):
+       - Raylib graphics version
+       - High score persistence
+       - Additional features
+
+     CONCLUSION (30 sec):
+       - Thank you
+       - Questions?
+
+
+📋 CHECKLIST FOR SUBMISSION
+═══════════════════════════════════════════════════════════════
+
+  Code Requirements:
+    ☐ Source code in C (C99/C11)
+    ☐ No compilation errors (-Wall -Wextra)
+    ☐ No memory leaks (ASAN checks pass)
+    ☐ Code is readable and well-commented
+    ☐ Functions are well-organized
+
+  GitHub Repository:
+    ☐ Repository created and public
+    ☐ All team members added as collaborators
+    ☐ Source code pushed
+    ☐ README present and complete
+    ☐ Clear commit history
+    ☐ Collaboration visible (team contributions)
+
+  Documentation:
+    ☐ README.md with usage instructions
+    ☐ Compilation instructions included
+    ☐ Controls documented
+    ☐ Game rules explained
+
+  Presentation:
+    ☐ Demo video recorded (5-10 min)
+    ☐ Video file uploaded/saved
+    ☐ Presentation slides prepared (if using)
+    ☐ Team members know their parts
+
+  Deliverables:
+    ☐ Working executable (builds without errors)
+    ☐ No crashes or undefined behavior
+    ☐ Game plays to completion
+    ☐ All promised features work
+
+
+QUICK ACTION PLAN (Next 5 Days)
+═══════════════════════════════════════════════════════════════
+
+TODAY/TOMORROW:
+  1. Create GitHub account (if needed)
+  2. Create repository following GITHUB_SETUP_GUIDE.txt
+  3. Add team members as collaborators
+  4. Verify push was successful
+
+DAYS 2-3:
+  5. Record demo video (5-10 minutes)
+  6. Show gameplay, controls, and GitHub
+  7. Keep it clear and professional
+
+DAYS 4-5:
+  8. Prepare presentation outline
+  9. Practice presentation (time it)
+  10. Get feedback from teammates
+
+BEFORE 04/06:
+  11. Final code review
+  12. Make any last-minute improvements
+  13. Submit everything
+
+
+GITHUB QUICK COMMANDS
+═══════════════════════════════════════════════════════════════
+
+Setup (one time):
+  cd "C:\Users\Marouan\PRJCT JEUX 11\Snake"
+  git remote add origin https://github.com/USERNAME/Snake-Game.git
+  git branch -M main
+  git push -u origin main
+
+After making changes:
+  git status
+  git add .
+  git commit -m "Description of changes"
+  git push
+
+View history:
+  git log --oneline
+  git log --graph --oneline --all
+
+Add collaborators:
+  (Do this on GitHub.com in Settings → Collaborators)
+
+
+WHAT EACH TEAM MEMBER SHOULD DO
+═══════════════════════════════════════════════════════════════
+
+Student 1 (Repository Owner):
+  ✓ Create GitHub repository
+  ✓ Push initial code
+  ✓ Add collaborators
+  → Lead the project on GitHub
+
+Student 2 & 3:
+  ✓ Clone repository: git clone <url>
+  ✓ Make improvements/fixes if needed
+  ✓ Push commits with meaningful messages
+  → Contribute code and documentation
+
+All Students:
+  ✓ Prepare for presentation
+  ✓ Practice demo video
+  ✓ Review final code
+
+
+ESTIMATED TIME TO COMPLETION
+═══════════════════════════════════════════════════════════════
+
+GitHub Setup        : 15 min
+Demo Video          : 20 min (record + edit)
+Presentation Prep   : 30 min
+Practice Run        : 20 min
+Final Review        : 15 min
+                      ───────
+TOTAL              : ~100 minutes (~2 hours)
+
+This is very manageable! ✓
+
+
+GRADING CRITERIA (What professors look for)
+═══════════════════════════════════════════════════════════════
+
+Code Quality (40%):
+  - Clean, readable code
+  - Good function decomposition
+  - No memory issues
+  - Handles edge cases
+
+Functionality (30%):
+  - Game runs without crashes
+  - Core features work
+  - Controls are responsive
+  - No undefined behavior
+
+Project Presentation (20%):
+  - Clear explanation
+  - Good demo video
+  - Professional presentation
+  - Good team collaboration shown
+
+GitHub Usage (10%):
+  - Proper repository setup
+  - Clear commit messages
+  - Multiple contributors visible
+  - README is complete
+
+TOTAL: 100%
+
+
+YOU'RE ON TRACK! 🎯
+═══════════════════════════════════════════════════════════════
+
+Current Status: 70% Complete
+  ✓ Code: DONE
+  ✓ Documentation: DONE
+  ✓ Git: DONE
+  ⏳ GitHub: SETUP GUIDE READY
+  ⏳ Demo: READY TO RECORD
+  ⏳ Presentation: EASY TO PREPARE
+
+Remaining effort: ~2 hours
+Deadline: 13 days away
+Status: ON SCHEDULE ✓ 
+
+═══════════════════════════════════════════════════════════════

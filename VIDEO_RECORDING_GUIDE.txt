@@ -1,0 +1,414 @@
+╔════════════════════════════════════════════════════════════════╗
+║       🎥 VIDEO RECORDING GUIDE - SNAKE GAME DEMO 🎥            ║
+║              Step-by-Step Recording Instructions               ║
+╚════════════════════════════════════════════════════════════════╝
+
+⏱️ TOTAL RECORDING TIME: 20 MINUTES (including setup & retake)
+═══════════════════════════════════════════════════════════════
+
+This guide will help you record a professional demo video of
+the Snake game. No special skills needed - just follow along!
+
+
+═══════════════════════════════════════════════════════════════
+STEP 1: PREPARE YOUR RECORDING SETUP (5 minutes)
+═══════════════════════════════════════════════════════════════
+
+CHOOSE YOUR RECORDING TOOL
+
+Option A - WINDOWS GAME BAR (Easiest - Built-in)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Prerequisites: Windows 10/11
+Steps:
+  1. No download needed (built-in to Windows)
+  2. Open a command window or terminal
+  3. Run: cd "C:\Users\Marouan\PRJCT JEUX 11\Snake"
+  4. Press: Win+G (Windows key + G)
+  5. Click "Yes, this is a game" if asked
+  6. Start recording!
+
+Pros: No download, works perfectly with console
+Cons: Windows only
+
+
+Option B - OBS STUDIO (Professional - Free Download)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Prerequisites: OBS installed from obsproject.com
+Steps:
+  1. Download OBS Studio (free)
+  2. Open OBS
+  3. Click "New Scene"
+  4. Click "+ Display Capture" for your screen
+  5. Select your monitor
+  6. Click "Start Recording"
+
+Pros: Highly customizable, best quality
+Cons: Slightly more complex setup
+
+
+Option C - SCREENFLOW (macOS)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Prerequisites: ScreenFlow app (paid, ~$7)
+Steps:
+  1. Open ScreenFlow
+  2. Click "Record"
+  3. Select area (full screen or window)
+  4. Start recording
+
+Pros: macOS native, simple
+Cons: Not free
+
+
+RECOMMENDED: Use Windows Game Bar (easiest!)
+
+
+═══════════════════════════════════════════════════════════════
+STEP 2: SET UP YOUR TERMINAL/CONSOLE (2 minutes)
+═══════════════════════════════════════════════════════════════
+
+1. Open Command Prompt or PowerShell
+
+   Method A - From Start Menu:
+     Click Start → Type "cmd" → Press Enter
+
+   Method B - From Windows Explorer:
+     Open file explorer → Navigate to Snake folder
+     Right-click → Open as administrator → Open in Terminal
+
+2. Navigate to Snake folder:
+     cd "C:\Users\Marouan\PRJCT JEUX 11\Snake"
+
+3. Make sure you can see:
+     - snake_console.exe in build/
+     - Current path in terminal
+
+4. Leave terminal ready but DON'T start the game yet
+
+
+═══════════════════════════════════════════════════════════════
+STEP 3: START RECORDING (1 minute)
+═══════════════════════════════════════════════════════════════
+
+If using Windows Game Bar:
+  1. Terminal is open and ready
+  2. Press: Win+G
+  3. Wait for Game Bar to appear
+  4. Click "📹 Start Recording" (or press Win+Alt+R)
+  5. A timer appears in corner
+  6. Ready to start!
+
+If using OBS:
+  1. OBS is open with display capture set up
+  2. Click "Start Recording"
+  3. Watch for red dot in corner
+  4. Ready to start!
+
+
+═══════════════════════════════════════════════════════════════
+STEP 4: RECORD YOUR GAMEPLAY (7 minutes total)
+═══════════════════════════════════════════════════════════════
+
+SEGMENT 1 - Start The Game (0:00 - 0:15)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+In terminal:
+  Type: .\build\snake_console.exe
+  Press: Enter
+  Wait: Game shows "Press any key to start"
+  Press: Any key
+  
+What should show:
+  ✓ Game window opening
+  ✓ Snake in center of grid
+  ✓ Food marked with *
+  ✓ Score: 0000
+
+Script (in voice-over later):
+  "This is the Snake console game we built in C. 
+   It's running directly in the terminal with no
+   dependencies. Now let's play a few rounds."
+
+
+SEGMENT 2 - Eat Food & Score (0:15 - 3:00)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Play the game:
+  ✓ Move toward food (use WASD or arrow keys)
+  ✓ Eat the food (position matches)
+  ✓ Watch score increase (+10)
+  ✓ Eat more food (5-10 pieces)
+  ✓ Show snake growing visually
+  ✓ Narrate what's happening
+
+What should show:
+  • Score climbing (0 → 10 → 20 → 50...)
+  • Snake growing longer
+  • Snake moving faster
+  • Difficulty increasing visibly
+
+Key Points to Show:
+  1. Responsive controls (keys work instantly)
+  2. No lag or delay
+  3. Smooth movement
+  4. Clean rendering
+
+Voice-over (add in editing):
+  "See how the snake grows as we eat...
+   The score increases every time we grab food...
+   And notice the snake is getting faster -
+   this is the progressive difficulty system..."
+
+
+SEGMENT 3 - Show Difficulty (3:00 - 5:00)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Play longer:
+  ✓ Eat 15-20 food items
+  ✓ Snake will be MUCH faster now
+  ✓ Make some close maneuvers
+  ✓ Show skill (near misses are good!)
+  ✓ Show high score achieved
+
+What should show:
+  • Score: 150+ (if you eat 15+ food)
+  • Speed: Noticeably faster than beginning
+  • Difficulty: Harder to control
+  • Gameplay: Tense & challenging
+
+Voice-over:
+  "As the score increases, the game gets harder.
+   Watch how much faster the snake is moving now...
+   This is what makes Snake challenging!"
+
+
+SEGMENT 4 - Game Over (5:00 - 6:00)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Play until:
+  ✓ Snake hits a wall, OR
+  ✓ Snake hits itself
+  ✓ Game shows "GAME OVER"
+  ✓ Shows final score
+  ✓ Shows restart prompt
+
+What should show:
+  • GAME OVER message in red
+  • Final score displayed
+  • Prompt: "Press R to restart, Q to quit"
+  • Clean error handling (NOT a crash!)
+
+Voice-over:
+  "And that's game over. The game detected the collision,
+   displayed the final score, and cleanly ended.
+   No crashes, no errors - just professional behavior."
+
+End recording here:
+  Press Q to quit
+
+
+═══════════════════════════════════════════════════════════════
+STEP 5: SHOW GITHUB REPOSITORY (Optional but Good - 1 minute)
+═══════════════════════════════════════════════════════════════
+
+After quitting the game:
+
+1. Open web browser
+2. Go to: https://github.com/MarouanOU7/Snake-Game
+3. Show:
+   ✓ Repository name
+   ✓ README.md file
+   ✓ Source code files
+   ✓ Commit history
+   ✓ Team members listed
+
+What to say:
+  "Our code is open source and publicly available on GitHub.
+   You can see the source code, the commits, and the full
+   documentation. Everything is well-organized and ready
+   for inspection."
+
+This step is OPTIONAL but RECOMMENDED
+(Makes the video ~1 minute longer - total ~7 min)
+
+
+═══════════════════════════════════════════════════════════════
+STEP 6: STOP RECORDING
+═══════════════════════════════════════════════════════════════
+
+Windows Game Bar:
+  1. Press: Win+Alt+R (toggle recording off)
+  2. Or click: Stop Recording button in overlay
+  3. Wait: Video saves automatically
+
+OBS:
+  1. Click: Stop Recording button
+  2. Wait: Video saves to specified folder
+
+Video Details:
+  ✓ Length: 5-8 minutes (perfect length)
+  ✓ Format: MP4 (default, good quality)
+  ✓ Audio: System audio (captures you talking, optional)
+
+
+═══════════════════════════════════════════════════════════════
+STEP 7: FIND & SAVE YOUR VIDEO
+═══════════════════════════════════════════════════════════════
+
+Windows Game Bar:
+  1. Press: Win+G
+  2. Click: "Gallery" or "Captures"
+  3. Your video is there!
+  4. Right-click → "Show in folder"
+  5. Copy to project folder
+
+OBS Default:
+  Usually saved to: C:\Users\[YourName]\Videos\
+
+Video Location Options:
+  ✓ Save to Snake project folder (easy to find)
+  ✓ Save to Desktop
+  ✓ Save to Videos folder
+  (just remember where!)
+
+Rename (optional):
+  snake-demo.mp4 (easier to remember)
+
+
+═══════════════════════════════════════════════════════════════
+STEP 8: REVIEW YOUR VIDEO
+═══════════════════════════════════════════════════════════════
+
+Watch your recording to check:
+  ✓ Audio is clear (if recorded)
+  ✓ Gameplay is visible
+  ✓ Score increases visible
+  ✓ Speed changes visible
+  ✓ Game over is shown
+  ✓ No technical glitches
+  ✓ No lag or stuttering
+
+If something is wrong:
+  1. Just re-record! (It takes 10 minutes)
+  2. Use the same steps above
+  3. Try again until you're happy
+
+If it looks good:
+  ✓ You're done! ✓
+
+
+═══════════════════════════════════════════════════════════════
+TIPS FOR BEST VIDEO RESULTS
+═══════════════════════════════════════════════════════════════
+
+VIDEO QUALITY:
+  ✓ Close other windows so only terminal shows
+  ✓ Make terminal fullscreen
+  ✓ Use large font in terminal (easier to see)
+  ✓ Make sure lighting is good (screenshot quality)
+
+GAMEPLAY QUALITY:
+  ✓ Play naturally (don't try too hard or too casual)
+  ✓ Eat food at good pace (slow enough to narrate)
+  ✓ Make one mistake so game ends naturally
+  ✓ Keep it between 5-8 minutes (not too long)
+
+CONTENT QUALITY:
+  ✓ Show responsive controls
+  ✓ Show score increasing clearly
+  ✓ Show difficulty increasing (speed up)
+  ✓ Show game ending correctly (no crashes)
+  ✓ Optional: Show GitHub repository
+
+AUDIO (if recording):
+  ✓ Speak clearly
+  ✓ Explain what you're showing
+  ✓ Don't mumble or go too fast
+  ✓ Pause to let action speak for itself
+
+
+═══════════════════════════════════════════════════════════════
+SCRIPT FOR NARRATION (Optional - Add During Editing)
+═══════════════════════════════════════════════════════════════
+
+"Hi, this is the Snake game we built in C as our mini-project.
+ It's a fully functional console-based game with no external
+ dependencies.
+
+ [Start game] The game launches instantly. See the snake here,
+ the food marked with asterisks. Now let's play.
+
+ [Play game] Watch as we navigate toward the food... got it!
+ Score increases by 10. The snake grows by one segment. Let's
+ keep going...
+
+ [Play longer] You can see the difficulty increasing - the snake
+ is moving faster now as our score climbs. This is the progressive
+ difficulty system we implemented.
+
+ [Continue until game over] And there's the collision detection
+ working perfectly - the snake hit the wall and the game ended
+ gracefully with our final score displayed.
+
+ Our code is fully tested, zero memory leaks, and compiles without
+ any warnings. You can find it on GitHub at the link below.
+
+ Thanks for watching!"
+
+
+═══════════════════════════════════════════════════════════════
+COMMON ISSUES & FIXES
+═══════════════════════════════════════════════════════════════
+
+Issue: "Game won't start"
+Fix: Make sure you're in the Snake folder
+     Check that build/snake_console.exe exists
+     Try: .\build\snake_console.exe
+
+Issue: "Recording won't start"
+Fix: Try Windows Game Bar (Win+G)
+     Or download OBS Studio
+     Close other recording apps
+
+Issue: "Video is too dark/hard to see"
+Fix: Make terminal window bigger
+     Maximize or fullscreen
+     Use light background (not dark)
+
+Issue: "Audio is muted"
+Fix: Check system volume is up
+     Check mic is enabled in recorder
+     Use OBS if you need full control
+
+Issue: "Snake moves too fast to follow"
+Fix: That's OK! It shows difficulty progression
+     Just show a little gameplay at fast speed
+     Can always re-record if needed
+
+Issue: "Game crashed during recording"
+Fix: Don't worry, just restart and re-record
+     It happens - one re-take is totally normal
+
+
+═══════════════════════════════════════════════════════════════
+YOU'RE READY TO RECORD!
+═══════════════════════════════════════════════════════════════
+
+Quick Checklist:
+  ☐ Terminal open and ready
+  ☐ Recording tool chosen (Game Bar recommended)
+  ☐ Game runs without errors
+  ☐ Clear space on your screen
+  ☐ Recording tool tested
+
+Go ahead:
+  1. Start recording
+  2. Run: .\build\snake_console.exe
+  3. Play naturally (5-8 minutes gameplay)
+  4. Show game over
+  5. Stop recording
+  6. Watch playback to verify
+  7. Done! Save the file
+
+You've got this! 🎥
+
+═══════════════════════════════════════════════════════════════

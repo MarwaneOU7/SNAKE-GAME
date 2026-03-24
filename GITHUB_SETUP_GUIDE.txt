@@ -1,0 +1,147 @@
+╔═══════════════════════════════════════════════════════════════╗
+║          GITHUB SETUP - STEP-BY-STEP GUIDE                    ║
+║          For: Snake Game Project                              ║
+╚═══════════════════════════════════════════════════════════════╝
+
+✅ LOCAL GIT REPOSITORY READY
+   Your code is committed locally and ready to push!
+
+═══════════════════════════════════════════════════════════════
+
+🔧 STEP 1: CREATE GITHUB REPOSITORY
+   (You do this once on GitHub.com)
+
+   1. Go to https://github.com/new
+   2. Fill in details:
+      - Repository name: Snake-Game (or similar)
+      - Description: "Classic Snake game in C - console version"
+      - Visibility: Public (for project showcase)
+   3. DO NOT initialize with README (we already have one!)
+   4. Click "Create repository"
+
+   ✓ GitHub will show you a URL like:
+     https://github.com/YOUR_USERNAME/Snake-Game.git
+
+═══════════════════════════════════════════════════════════════
+
+🔗 STEP 2: LINK LOCAL REPO TO GITHUB
+   (Run these commands in PowerShell)
+
+   Option A - Using HTTPS (simpler):
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   cd "C:\Users\Marouan\PRJCT JEUX 11\Snake"
+   git remote add origin https://github.com/YOUR_USERNAME/Snake-Game.git
+   git branch -M main
+   git push -u origin main
+
+   Option B - Using SSH (if configured):
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   cd "C:\Users\Marouan\PRJCT JEUX 11\Snake"
+   git remote add origin git@github.com:YOUR_USERNAME/Snake-Game.git
+   git branch -M main
+   git push -u origin main
+
+   ⚠️  Replace "YOUR_USERNAME" with your actual GitHub username!
+
+═══════════════════════════════════════════════════════════════
+
+👥 STEP 3: ADD TEAM MEMBERS AS COLLABORATORS
+
+   On GitHub:
+   1. Open your repository
+   2. Go to Settings → Collaborators (left menu)
+   3. Click "Add people"
+   4. Search for each team member by username
+   5. Click "Add [username] to this repository"
+
+   Team member will get an invitation to collaborate!
+
+═══════════════════════════════════════════════════════════════
+
+📝 STEP 4: VERIFY IT WORKED
+
+   Run this to confirm:
+   ━━━━━━━━━━━━━━━━━━━
+   cd "C:\Users\Marouan\PRJCT JEUX 11\Snake"
+   git remote -v
+
+   You should see:
+   origin  https://github.com/YOUR_USERNAME/Snake-Game.git (fetch)
+   origin  https://github.com/YOUR_USERNAME/Snake-Game.git (push)
+
+═══════════════════════════════════════════════════════════════
+
+📦 WHAT'S ON GITHUB NOW
+
+   13 files committed:
+   ├── .gitignore
+   ├── Makefile
+   ├── README.md
+   ├── SETUP_COMPLETE.txt
+   ├── build-console.bat
+   ├── build-setup.ps1
+   ├── build.bat
+   ├── build/ (executable in .gitignore)
+   ├── include/
+   │   ├── game.h              (Raylib version)
+   │   └── game_console.h      (Console version)
+   └── src/
+       ├── game.c              (Raylib version)
+       ├── game_console.c      (Console - 266 lines)
+       ├── main.c              (Raylib version)
+       └── main_console.c      (Console - 47 lines)
+
+═══════════════════════════════════════════════════════════════
+
+🔄 FUTURE COMMITS (After setup)
+
+   After making changes:
+   
+   git add .
+   git commit -m "Description of changes"
+   git push
+
+   Example commits:
+   - "Add Raylib graphics version"
+   - "Implement high score file persistence"
+   - "Add difficulty levels"
+   - "Fix keyboard input lag"
+
+═══════════════════════════════════════════════════════════════
+
+🐛 TROUBLESHOOTING
+
+   Problem: "Permission denied (publickey)" on SSH
+   ↳ Solution: Use HTTPS instead, or set up SSH keys
+
+   Problem: "Repository already exists"
+   ↳ Solution: You might have git already set up
+     Use: git remote remove origin
+        git remote add origin <new-url>
+
+   Problem: "Authentication failed"
+   ↳ Solution: Use GitHub Personal Access Token instead of password
+     1. Create token: https://github.com/settings/tokens
+     2. Use token as password when prompted
+
+═══════════════════════════════════════════════════════════════
+
+✨ YOU'RE READY FOR GITHUB!
+
+Your project has:
+  ✓ Working code (no compilation errors)
+  ✓ Complete documentation (README)
+  ✓ Git history initialized
+  ✓ .gitignore configured
+  ✓ All files committed
+
+Next: Push to GitHub following STEP 2 above!
+
+═══════════════════════════════════════════════════════════════
+
+Current Git Status:
+  Branch: master → main (will rename on first push)
+  Commits: 1 (Initial commit with 13 files)
+  Ready to push: YES ✓
+
+═══════════════════════════════════════════════════════════════

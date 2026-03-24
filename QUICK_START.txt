@@ -1,0 +1,305 @@
+╔════════════════════════════════════════════════════════════════╗
+║        🚀 SNAKE GAME - FINAL PUSH QUICK START GUIDE 🚀         ║
+║              5 Easy Steps to GitHub + Delivery                 ║
+╚════════════════════════════════════════════════════════════════╝
+
+📌 TL;DR - DO THIS NOW (10 minutes)
+═══════════════════════════════════════════════════════════════
+
+1. Create GitHub account → https://github.com/signup
+2. Create new repo → https://github.com/new
+   Name it: "Snake-Game"
+   Make it PUBLIC
+   DON'T initialize with README (skip all options)
+3. Edit & run:
+   - Windows: .\push-to-github.bat
+   - PowerShell: .\push-to-github.ps1
+4. Add team members to repo settings
+5. Done! Your code is on GitHub ✓
+
+
+═══════════════════════════════════════════════════════════════
+
+✅ STEP 1: CREATE GITHUB ACCOUNT (If you don't have one)
+═══════════════════════════════════════════════════════════════
+
+Go to: https://github.com/signup
+
+Fill in:
+  • Username (e.g., "john-doe-projects")
+  • Email
+  • Password
+  • Verify email
+
+Done! You now have a GitHub account.
+
+
+✅ STEP 2: CREATE YOUR REPOSITORY
+═══════════════════════════════════════════════════════════════
+
+Go to: https://github.com/new
+
+Fill in EXACTLY:
+  • Repository name: Snake-Game
+  • Description: "Classic Snake game built in C with console rendering"
+  • Visibility: ⦿ Public
+  • ☐ Add .gitignore  (LEAVE UNCHECKED - we have one)
+  ☐ Add license      (LEAVE UNCHECKED)
+
+Click: "Create repository"
+
+✓ You'll see a page with instructions
+
+
+✅ STEP 3: PUSH YOUR CODE
+═══════════════════════════════════════════════════════════════
+
+Option A - WINDOWS CMD (Simple)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+cd "C:\Users\Marouan\PRJCT JEUX 11\Snake"
+.\push-to-github.bat
+
+Then edit the script:
+  Line 13: set GITHUB_USERNAME=YOUR_USERNAME
+  Replace YOUR_USERNAME with your actual GitHub username
+
+Save, run again, done!
+
+
+Option B - POWERSHELL (Also Simple)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+cd "C:\Users\Marouan\PRJCT JEUX 11\Snake"
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
+.\push-to-github.ps1
+
+Edit the script:
+  Line 10: $GITHUB_USERNAME = "YOUR_USERNAME"
+  Replace YOUR_USERNAME with your actual GitHub username
+
+Save, run again, done!
+
+
+Option C - MANUAL (If scripts don't work)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+cd "C:\Users\Marouan\PRJCT JEUX 11\Snake"
+
+git remote add origin https://github.com/YOUR_USERNAME/Snake-Game.git
+git branch -M main
+git push -u origin main
+
+Replace YOUR_USERNAME with your GitHub username!
+
+It will ask for credentials:
+  • Username: your-github-username
+  • Password: your-github-password (or Personal Access Token)
+
+Done! ✓
+
+
+✅ STEP 4: ADD TEAM MEMBERS AS COLLABORATORS
+═══════════════════════════════════════════════════════════════
+
+On your GitHub repository page:
+
+1. Click "Settings" (top right menu)
+2. Click "Collaborators" (left menu)
+3. Click "Add people"
+4. Type your teammate's GitHub username
+5. Click "Select a collaborator"
+6. Click "Add @username to this repository"
+7. Repeat for each team member
+
+They'll get an email invitation to join!
+
+
+✅ STEP 5: VERIFY EVERYTHING
+═══════════════════════════════════════════════════════════════
+
+Go to: https://github.com/YOUR_USERNAME/Snake-Game
+
+You should see:
+  ✓ Your code (src/, include/, README.md, etc.)
+  ✓ All 4 commits
+  ✓ Team members listed as collaborators
+
+
+═══════════════════════════════════════════════════════════════
+
+🎬 NEXT: RECORD DEMO VIDEO (20 minutes)
+═══════════════════════════════════════════════════════════════
+
+Tools (pick one):
+  • Windows Game Bar (built-in): Press Win+G
+  • OBS Studio (free): https://obsproject.com
+  • ScreenFlow (macOS): In App Store
+
+What to record:
+
+1. START (0:00 - 0:30)
+   "This is the Snake game we built in C"
+   Show GitHub repository page
+
+2. GAMEPLAY (0:30 - 4:00)
+   • Run: .\build\snake_console.exe
+   • Play a full game
+   • Show score increasing
+   • Hit an obstacle naturally (game over)
+   • Show restart feature
+
+3. CODE (4:00 - 5:00)
+   • Open source files in editor
+   • Highlight main functions
+   • Show game_console.c structure
+
+Total: 5-10 minutes
+
+Save as: demo-video.mp4
+
+
+═══════════════════════════════════════════════════════════════
+
+📊 PRESENTATION PREP (30 minutes)
+═══════════════════════════════════════════════════════════════
+
+Write a simple outline (10-15 minute talk):
+
+INTRO (1 min):
+  "Our project is a Snake game written from scratch in C.
+   It's fully functional, has zero memory leaks, and runs
+   on Windows, Linux, and macOS."
+
+OVERVIEW (2 min):
+  • Team: [names]
+  • Why Snake? Simple but complete
+  • Key requirement: No Raylib dependencies
+
+TECHNICAL (3 min):
+  • Language: C99
+  • Architecture: Game loop, collision detection
+  • Memory: Stack only, no malloc
+  • Performance: <1KB RAM, <1 second compile
+
+DEMO (1-2 min):
+  • Show game running
+  • Play briefly
+
+GITHUB (1 min):
+  • Show repository
+  • Show commits
+  • Show team collaboration
+
+Q&A (1 min):
+  • Ready for questions
+
+
+═══════════════════════════════════════════════════════════════
+
+📋 FINAL CHECKLIST (Before 06/04/2026)
+═══════════════════════════════════════════════════════════════
+
+GitHub:
+  ☐ Repository created & public
+  ☐ Code pushed to GitHub
+  ☐ All team members added
+  ☐ README visible on GitHub
+  ☐ All 4 commits visible
+
+Demo:
+  ☐ Game recorded playing
+  ☐ Game over demonstrated
+  ☐ GitHub shown
+  ☐ Video saved & accessible
+  ☐ 5-10 minutes long
+
+Presentation:
+  ☐ Outline written
+  ☐ Presented to team
+  ☐ Everyone knows their part
+  ☐ Rehearsed once
+  ☐ 10-15 minutes timed
+
+Code:
+  ☐ Compiles without errors
+  ☐ Runs without crashes
+  ☐ All features working
+  ☐ No memory issues
+  ☐ README complete
+
+
+═══════════════════════════════════════════════════════════════
+
+⚠️ TROUBLESHOOTING
+═══════════════════════════════════════════════════════════════
+
+"Script doesn't run" (Windows)
+  → Open CMD as Administrator
+  → Run: cd "C:\Users\Marouan\PRJCT JEUX 11\Snake"
+  → Run: .\push-to-github.bat
+
+"Permission denied" (PowerShell)
+  → Run: Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
+  → Then run the script
+
+"Push failed - repository not found"
+  → Check your GitHub username is correct
+  → Verify repository exists at: github.com/YOUR_USERNAME/Snake-Game
+
+"Failed to authenticate"
+  → Use GitHub Personal Access Token instead of password
+  → Create one: https://github.com/settings/tokens
+  → Use token as password when prompted
+
+"Repository already exists locally"
+  → You might have pushed before
+  → That's OK! Just verify at github.com
+
+
+═══════════════════════════════════════════════════════════════
+
+💡 TIPS FOR SUCCESS
+═══════════════════════════════════════════════════════════════
+
+✓ Make repository PUBLIC (for evaluation)
+✓ Add all team members as collaborators
+✓ Check that code appears on GitHub (not just locally)
+✓ Record a natural game session (don't cheat!)
+✓ Show your GitHub repository in the demo video
+✓ Practice presentation as a team
+✓ Time your presentation (10-15 min exactly)
+✓ Speak clearly and explain your choices
+✓ Be proud of your work!
+
+
+═══════════════════════════════════════════════════════════════
+
+📞 QUICK REFERENCE
+═══════════════════════════════════════════════════════════════
+
+GitHub Account:       https://github.com
+Create Repo:          https://github.com/new
+Your Repository:      https://github.com/YOUR_USERNAME/Snake-Game
+Add Collaborators:    github.com/YOUR_USERNAME/Snake-Game/settings/access
+Personal Access Token: https://github.com/settings/tokens
+
+
+═══════════════════════════════════════════════════════════════
+
+🎉 YOU'RE ALMOST DONE!
+═══════════════════════════════════════════════════════════════
+
+Timeline:
+  Today: Push to GitHub (10 min) ← DO THIS NOW
+  This week: Record video (20 min)
+  This week: Prepare presentation (30 min)
+  Before 06/04: Final review
+
+Status: 75% → 90% complete after GitHub push
+
+Confidence: VERY HIGH ✓✓✓
+
+Next action: Scroll up and follow STEP 1-5 above!
+
+═══════════════════════════════════════════════════════════════

@@ -1,5 +1,6 @@
 #include "raylib.h"
 #include "../include/game.h"
+#include <stdio.h>
 
 int main(void) {
     // Initialize window
@@ -10,31 +11,38 @@ int main(void) {
     GameState game = {0};
     InitGame(&game);
     
+    printf("\n╔════════════════════════════════════╗\n");
+    printf("║     SNAKE Game - Raylib Edition    ║\n");
+    printf("║      Press R to restart game       ║\n");
+    printf("║      Press Q to quit               ║\n");
+    printf("╚════════════════════════════════════╝\n\n");
+    
     // Main game loop
     while (!WindowShouldClose()) {
-        // Handle input
-        if (IsKeyPressed(KEY_P)) {
-            game.paused = !game.paused;
-        }
-        
+        // Update
         if (game.game_over) {
             if (IsKeyPressed(KEY_R)) {
                 CleanupGame(&game);
                 InitGame(&game);
+            } else if (IsKeyPressed(KEY_Q)) {
+                break;
             }
         } else {
+            if (IsKeyPressed(KEY_Q)) {
+                break;
+            }
             UpdateGame(&game);
         }
         
         // Draw
-        BeginDrawing();
         DrawGame(&game);
-        EndDrawing();
     }
     
     // Cleanup
     CleanupGame(&game);
     CloseWindow();
+    
+    printf("Thanks for playing SNAKE!\n");
     
     return 0;
 }

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game - Web Edition</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            text-align: center;
+            max-width: 600px;
+            width: 90%;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+
+        #gameCanvas {
+            border: 3px solid #667eea;
+            background-color: #000;
+            display: block;
+            margin: 0 auto 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+            gap: 20px;
+        }
+
+        .stat-box {
+            background: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 5px;
+        }
+
+        .stat-value {
+            color: #667eea;
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .controls {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        button {
+            padding: 12px 24px;
+            font-size: 1em;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            background: #667eea;
+            color: white;
+        }
+
+        button:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        .btn-restart {
+            background: #10b981;
+        }
+
+        .btn-restart:hover {
+            background: #059669;
+        }
+
+        .btn-pause {
+            background: #f59e0b;
+        }
+
+        .btn-pause:hover {
+            background: #d97706;
+        }
+
+        .instructions {
+            background: #f3f4f6;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        .instructions h3 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .instructions p {
+            color: #666;
+            margin-bottom: 8px;
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+
+        .key {
+            background: #667eea;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-family: monospace;
+        }
+
+        .status {
+            margin-top: 20px;
+            font-size: 1.1em;
+            font-weight: bold;
+            height: 30px;
+        }
+
+        .status.game-over {
+            color: #ef4444;
+        }
+
+        .status.paused {
+            color: #f59e0b;
+        }
+
+        .status.playing {
+            color: #10b981;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🐍 SNAKE</h1>
+        <p class="subtitle">Web Edition</p>
+
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+        <div class="stats">
+            <div class="stat-box">
+                <div class="stat-label">Score</div>
+                <div class="stat-value" id="score">0</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">Speed Level</div>
+                <div class="stat-value" id="level">1</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">Length</div>
+                <div class="stat-value" id="length">3</div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="playBtn" class="btn-restart">▶ Start Game</button>
+            <button id="pauseBtn" class="btn-pause">⏸ Pause</button>
+            <button id="restartBtn" class="btn-restart">🔄 Restart</button>
+        </div>
+
+        <div class="status" id="status"></div>
+
+        <div class="instructions">
+            <h3>📖 How to Play</h3>
+            <p><span class="key">↑ ↓ ← →</span> or <span class="key">W A S D</span> - Move Snake</p>
+            <p><span class="key">SPACE</span> - Pause/Resume</p>
+            <p><span class="key">R</span> - Restart Game</p>
+            <p>🔴 Eat red food to grow</p>
+            <p>⚠️ Don't hit walls or yourself!</p>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

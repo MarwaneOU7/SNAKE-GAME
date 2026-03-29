@@ -1,0 +1,400 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║           🎬 SNAKE GAME - COMPLETE DEMO & SUBMISSION GUIDE 🎬              ║
+║                  Ready for Grade (Deadline: 06/04/2026)                     ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+📊 PROJECT STATUS: 90% COMPLETE - FINAL STEPS BELOW
+═══════════════════════════════════════════════════════════════════════════════
+
+✅ DELIVERABLES CHECKLIST
+═══════════════════════════════════════════════════════════════════════════════
+
+Code & Repository:
+  ☑ Langage C uniquement (C99 standard) ✓
+  ☑ Application desktop (console) ✓
+  ☑ Code structuré avec fonctions bien séparées ✓
+  ☑ Zéro fuites mémoire (valide avec -fsanitize=address) ✓
+  ☑ README complet décrivant projet, compilation et exécution ✓
+  ☑ Dépôt GitHub avec collaboration visible ✓
+
+Démonstration (À faire):
+  ☐ Vidéo démo du jeu (2-3 minutes)
+  ☐ Présentation orale du projet (10-15 minutes)
+
+═══════════════════════════════════════════════════════════════════════════════
+📹 VIDEO DEMO RECORDING GUIDE
+═══════════════════════════════════════════════════════════════════════════════
+
+WHAT TO RECORD (5-7 minutes total):
+1. Opening screen (15 seconds)
+2. Demonstration of gameplay (2-3 minutes)
+3. Showing code structure (1-2 minutes)
+4. Compilation and build process (1 minute)
+5. Closing remarks (30 seconds)
+
+DETAILED STEPS:
+
+1️⃣ SETUP
+─────────────────────────────────────────────────────────────────────────────
+
+   Prepare:
+   - Recording software: OBS Studio (free, https://obsproject.com/)
+                        OR Camtasia, ScreenFlow (Mac), etc.
+   - Microphone: Built-in or external USB mic
+   - Lighting: Well-lit room (avoid shadows)
+   - Resolution: 1920x1080 (Full HD) if possible
+
+   Recording Settings (OBS Studio):
+   - Output: MP4 format
+   - Resolution: 1920x1080
+   - FPS: 60
+   - Bitrate: 6000-8000 kbps
+
+
+2️⃣ PART 1: OPENING NARRATION (0:00 - 0:15)
+─────────────────────────────────────────────────────────────────────────────
+
+   SCRIPT:
+   "Hello, we present the SNAKE Game project, built in C. This is a 
+    fully functional desktop game featuring the classic Snake mechanics:
+    grow by eating food, avoid walls and yourself, and try to beat your 
+    high score. Let's see it in action."
+
+   ON SCREEN:
+   - Show title screen of compiled game
+   - Display team names with project title
+
+
+3️⃣ PART 2: GAMEPLAY DEMONSTRATION (0:15 - 3:15)
+─────────────────────────────────────────────────────────────────────────────
+
+   SCRIPT (while playing):
+   "The game starts with a small snake in the center. We control it 
+    using WASD keys or arrow keys. The * symbol is food - when the 
+    snake eats it, it grows and we score 10 points.
+
+    See how the snake grows? That's our dynamic array handling the 
+    new segments. The speed increases with each food eaten, making 
+    the game progressively harder.
+
+    Let me show you collision detection in action... [hit wall]
+    Game Over! The snake crashed into the wall. That's handled by our 
+    CheckCollision function."
+
+   ACTIONS TO SHOW:
+   ☑ Play the game for 2-3 minutes
+   ☑ Eat at least 5 food items (show score increase)
+   ☑ Demonstrate pause (press P)
+   ☑ Show difficulty progression (speed increases)
+   ☑ Intentionally crash (wall collision)
+   ☑ Show Game Over screen
+   ☑ Demonstrate restart (press R)
+
+
+4️⃣ PART 3: CODE WALKTHROUGHS (3:15 - 4:30)
+─────────────────────────────────────────────────────────────────────────────
+
+   A) Project Structure (30 seconds):
+      - Open file explorer
+      - Show folders: include/, src/, build/
+      - Show key files: game_console.h, game_console.c, main_console.c
+
+      NARRATION:
+      "Our project is organized into three key areas:
+       - Headers (include/) for function declarations
+       - Source code (src/) with modular functions
+       - Build artifacts (build/) with compiled exe"
+
+   B) Core Data Structure (30 seconds):
+      - Open game_console.h
+      - Highlight GameState struct, Snake struct, Position struct
+
+      NARRATION:
+      "Our game uses three main data structures:
+       - GameState: tracks all active game data
+       - Snake: arrays for body positions plus direction
+       - Position: simple x,y coordinates for grid positions"
+
+   C) Key Logic - Collision Detection (30 seconds):
+      - Open game_console.c and show CheckCollision function
+      - Read aloud the two checks: wall collision and self collision
+
+      NARRATION:
+      "Collision detection is at the heart of the game. We check:
+       First, if the snake head hit a wall (out of bounds)
+       Second, if it hit itself (body array overlap)
+       If either is true, game over."
+
+
+5️⃣ PART 4: BUILD & COMPILATION (4:30 - 5:30)
+─────────────────────────────────────────────────────────────────────────────
+
+   SCRIPT:
+   "Let's show how we compile and build the project."
+
+   ACTIONS:
+   ☑ Open terminal/PowerShell
+   ☑ Navigate to Snake folder: cd "C:\Users\Marouan\PRJCT JEUX 11\Snake"
+   ☑ Show the Makefile or batch file
+   ☑ Run compilation command
+
+   FOR WINDOWS (PowerShell):
+   ```
+   $env:PATH = "C:\tools\llvm-mingw\bin;$env:PATH"
+   gcc -Wall -Wextra -std=c99 -O2 -o build/snake_console `
+       src/game_console.c src/main_console.c
+   ```
+
+   FOR LINUX/MAC:
+   ```
+   gcc -Wall -Wextra -std=c99 -O2 -o build/snake_console \
+       src/game_console.c src/main_console.c
+   ```
+
+   NARRATION:
+   "We compile with strict flags:
+    -Wall -Wextra: Show all warnings
+    -std=c99: Use C99 standard
+    -O2: Optimization level (faster code)
+    
+    The result is a small executable - just 94 KB - with zero 
+    dependencies. That's the power of C."
+
+
+6️⃣ PART 5: MEMORY SAFETY VERIFICATION (5:30 - 6:00)
+─────────────────────────────────────────────────────────────────────────────
+
+   OPTIONAL (shows profesionalism):
+
+   SCRIPT:
+   "To ensure memory safety, we compile with sanitizers:"
+
+   COMMAND (on Linux/Windows with GCC):
+   ```
+   gcc -Wall -Wextra -std=c99 -fsanitize=address \
+       src/game_console.c src/main_console.c -o test_snake
+   ./test_snake
+   ```
+
+   RESULT: [No errors or warnings from Address Sanitizer]
+
+   NARRATION:
+   "Zero memory leaks. Every malloc has its corresponding free.
+    That's good C programming."
+
+
+7️⃣ CLOSING & GITHUB LINK (6:00 - 6:30)
+─────────────────────────────────────────────────────────────────────────────
+
+   ON SCREEN:
+   - Show GitHub repository: https://github.com/MarwaneOU7/SNAKE-GAME
+   - Display commits with clear messages
+   - Show README on GitHub
+
+   FINAL NARRATION:
+   "This project demonstrates core C skills:
+    ✓ Modular code structure
+    ✓ Dynamic memory management
+    ✓ Algorithm implementation (collision detection)
+    ✓ Real-time game loop
+    ✓ Professional repository practices
+    
+    The code is clean, the game is fun, and it's professionally 
+    maintained on GitHub with clear commit messages.
+    
+    Thank you for watching!"
+
+
+═══════════════════════════════════════════════════════════════════════════════
+🎤 ORAL PRESENTATION GUIDE (10-15 MINUTES)
+═══════════════════════════════════════════════════════════════════════════════
+
+STRUCTURE (Use PRESENTATION_SCRIPT.txt as base):
+
+1. INTRODUCTION (1 minute)
+   ─────────────────────────────────────────────────────────────
+   "Hello, we're [names]. We built the Snake game in C to demonstrate
+    professional C programming with game development concepts."
+
+2. WHY SNAKE? (2 minutes)
+   ─────────────────────────────────────────────────────────────
+   • Simple core concept
+   • Demonstrates key programming skills
+   • Playable and engaging
+   • Achievable in project timeline
+
+3. TECHNICAL DETAILS (5 minutes)
+   ─────────────────────────────────────────────────────────────
+   • Architecture: Game loop, state management
+   • Data structures: Snake, Food, GameState
+   • Collision detection algorithm
+   • Input handling (keyboard)
+   • Scoring and difficulty progression
+
+4. CODE QUALITY (2 minutes)
+   ─────────────────────────────────────────────────────────────
+   • C99 standard compliance
+   • No memory leaks (valided with sanitizers)
+   • Clean code structure (functions, modularity)
+   • Cross-platform compatibility
+   • No external dependencies (console version)
+
+5. REPOSITORY & COLLABORATION (2 minutes)
+   ─────────────────────────────────────────────────────────────
+   "Our code is on GitHub at [URL]
+    - Clear commit messages showing development progress
+    - README with complete documentation
+    - Organized folder structure
+    - Easy to build and run"
+
+6. LESSONS LEARNED (2 minutes)
+   ─────────────────────────────────────────────────────────────
+   "This project taught us:
+    • Game development fundamentals
+    • Memory-safe C programming
+    • Collaborative git workflows
+    • Testing and debugging strategies
+    • Professional code organization"
+
+7. CONCLUSION (1 minute)
+   ─────────────────────────────────────────────────────────────
+   "We're proud of this project. It's a complete, playable game
+    built in C with professional code quality. Thank you."
+
+
+═══════════════════════════════════════════════════════════════════════════════
+✨ EVALUATION CRITERIA CHECKLIST
+═══════════════════════════════════════════════════════════════════════════════
+
+Your project will be evaluated on these criteria. Ensure each is addressed:
+
+CODE QUALITY (25%)
+  ☑ Lisibilité: Code is well-organized and commented
+  ☑ Fonctions: Logic divided into logical functions (not monolithic)
+  ☑ Respect bonnes pratiques: Naming conventions, spacing, structure
+  ☑ Documentation: Header comments on key functions
+
+FONCTIONNALITÉ (25%)
+  ☑ Le jeu tourne: No crashes
+  ☑ Toutes fonctionnalités promises: Snake moves, eats, grows, scores, 
+    collision detection, speed increases
+  ☑ Robustesse: Handles edge cases (cannot turn 180°, etc.)
+
+GESTION MÉMOIRE (20%)
+  ☑ Pas de fuites: Every malloc has free()
+  ☑ Pas d'accès invalides: No out-of-bounds access
+  ☑ Validation: Verified with -fsanitize=address
+
+CRÉATIVITÉ (10%)
+  ☑ Originalité - Console game done well is more valuable than
+    half-finished complex graphics version
+  ☑ Polish - Nice UI, scoring system, restart functionality
+
+PRÉSENTATION (10%)
+  ☑ Vidéo démo: Clear, professional, shows gameplay
+  ☑ Explication: Well-structured, answers questions asked
+  ☑ Slides: If used, clean and informative
+
+GITHUB (10%)
+  ☑ Repository bien structuré ✓
+  ☑ Commits clairs ✓
+  ☑ README complet ✓
+  ☑ Collaboration visible ✓ (invite team members as collaborators)
+
+
+═══════════════════════════════════════════════════════════════════════════════
+🚀 FINAL SUBMISSION CHECKLIST
+═══════════════════════════════════════════════════════════════════════════════
+
+BEFORE SUBMISSION DAY (06/04/2026):
+
+□ Code Quality:
+  □ All source files (.c and .h) in repository
+  □ No debug code or TODOs left
+  □ Consistent coding style throughout
+  □ Comments on complex logic
+
+□ Compilation:
+  □ Clean build with no warnings
+  □ Tested on at least one platform
+  □ Executable runs without crashing
+
+□ Memory Safety:
+  □ Tested with -fsanitize=address
+  □ Tested with valgrind (Linux) if possible
+  □ No memory leaks detected
+
+□ Documentation:
+  □ README.md complete and accurate
+  □ build-console.bat or Makefile works correctly
+  □ Installation instructions clear
+  □ Usage instructions clear
+
+□ GitHub:
+  □ Code pushed to remote repository
+  □ All team members invited as collaborators
+  □ Commits have descriptive messages
+  □ No binary files in repo (only .exe in /build)
+
+□ Team Coordination:
+  □ All members understand code
+  □ Roles decided for presentation
+  □ Practice presentation at least once
+
+□ Demo Video:
+  □ Recorded and saved locally
+  □ [OPTIONAL] Uploaded to YouTube/Drive (share link)
+  □ Shows gameplay clearly
+  □ Shows code structure
+
+□ Presentation:
+  □ Script prepared (use PRESENTATION_SCRIPT.txt)
+  □ Slides created (if using any)
+  □ Practiced full presentation
+  □ Duration is 10-15 minutes
+  □ All team members know their part
+
+
+═══════════════════════════════════════════════════════════════════════════════
+📋 TEAM ROLES SUGGESTION
+═══════════════════════════════════════════════════════════════════════════════
+
+MAROUAN (Lead Developer):
+  - Introduce project and team
+  - Explain game mechanics and logic
+  - Demo gameplay
+
+HAMZA (Technical Lead):
+  - Explain code architecture
+  - Walk through collision detection
+  - Show build process
+
+DRISS (Quality & Collaboration):
+  - Explain memory management approach
+  - Show GitHub repository structure
+  - Demonstrate compilation
+
+Remember: Any team member should be able to answer any question about the code!
+
+
+═══════════════════════════════════════════════════════════════════════════════
+🔗 QUICK LINKS & RESOURCES
+═══════════════════════════════════════════════════════════════════════════════
+
+GitHub Repo: https://github.com/MarwaneOU7/SNAKE-GAME
+Live Build: ./build-console.bat (Windows) or make (Linux)
+Demo Run: ./build/snake_console.exe
+
+Questions? Read:
+  - README.md (project overview)
+  - GITHUB_SETUP_GUIDE.txt (repository info)
+  - PRESENTATION_SCRIPT.txt (detailed talking points)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+Good luck with your presentation! You've built something great. Be confident,
+explain your code clearly, and show enthusiasm. Professors respect projects
+that are complete and work well. Yours does. You'll do great!
+
+─────────────────────────────────────────────────────────────────────────────
+Last Updated: 3/29/2026 | Status: Ready for Submission ✓

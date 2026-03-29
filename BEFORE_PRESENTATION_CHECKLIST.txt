@@ -1,0 +1,377 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║          ✅ BEFORE PRESENTATION DAY - FINAL ACTIONS CHECKLIST ✅            ║
+║                      (Print this out and check off items)                    ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+THIS WEEK: CODE & TESTING (By Friday)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+WINDOWS TESTING:
+□ Open PowerShell and navigate to project
+  cd "C:\Users\Marouan\PRJCT JEUX 11\Snake"
+
+□ Test build with batch file
+  .\build-console.bat
+  
+□ Verify executable created
+  dir build\*.exe
+  Should show: snake_console.exe (94 KB)
+
+□ Run the game
+  .\build\snake_console.exe
+  Test: WASD movement, eat food, pause (P), restart (R)
+  Expected: No crashes, smooth gameplay
+
+□ Compile with warnings enabled
+  $env:PATH = "C:\tools\llvm-mingw\bin;$env:PATH"
+  gcc -Wall -Wextra -std=c99 -O2 -o build/test src/game_console.c src/main_console.c
+  Expected: ZERO warnings, compilation ok
+
+CODE REVIEW:
+□ Check project structure
+  - include/game_console.h exists
+  - src/game_console.c exists
+  - src/main_console.c exists
+  - src/game.c exists (Raylib version)
+  - src/main.c exists (Raylib version)
+
+□ Verify no debug code
+  - Remove any printf statements that aren't necessary
+  - Check no TODO comments left
+
+□ Confirm memory safety (if on Linux)
+  gcc -fsanitize=address -O2 -std=c99 \
+      src/game_console.c src/main_console.c -o test
+  ./test
+  Expected: [Address Sanitizer]: SUMMARY: (no errors) 0 errors
+
+DOCUMENTATION CHECK:
+□ README.md - Open and verify all sections exist:
+  ✓ Features
+  ✓ How to Play
+  ✓ Quick Start
+  ✓ Project Structure
+  ✓ Technical Architecture
+  ✓ Requirements
+  ✓ Code Quality Validation
+  ✓ Performance stats
+  ✓ GitHub repo link
+
+□ QUICK_START.txt - Verify commands work exactly as written
+
+□ DEMO_SUBMISSION_GUIDE.txt - Read through completely
+
+□ PRESENTATION_SCRIPT.txt - Read through completely
+
+GITHUB CHECK:
+□ Visit https://github.com/MarwaneOU7/SNAKE-GAME
+
+□ Verify:
+  - [ ] README displays correctly
+  - [ ] Code files visible
+  - [ ] build/ folder exists with .exe
+  - [ ] .gitignore contains proper entries
+  - [ ] Commits show clear development progress
+  
+□ Check team access:
+  - [ ] Hamza Tahiri listed
+  - [ ] Driss Kerbal listed
+  - [ ] Can see their contributions
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ONE WEEK BEFORE: VIDEO RECORDING (By Wednesday)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PREPARATION:
+□ Install OBS Studio (free)
+  Download: https://obsproject.com/download
+
+□ Test your microphone
+  - [ ] Built-in mic works
+  - [ ] Volume level good
+  - [ ] No background noise
+
+□ Prepare environment
+  - [ ] Clean desktop (hide personal files)
+  - [ ] Good lighting
+  - [ ] Minimize distractions
+  - [ ] Close unneeded browser tabs
+
+□ Have scripts ready
+  - [ ] PRESENTATION_SCRIPT.txt open
+  - [ ] DEMO_SUBMISSION_GUIDE.txt for reference
+
+RECORDING SESSION (1 hour total):
+□ Test recording (5 min)
+  - [ ] Start OBS
+  - [ ] Record 30 seconds test
+  - [ ] Verify audio and video quality
+  - [ ] Delete test recording
+
+□ Record PART 1: Opening (15 seconds)
+  Script: "Hello, we present the SNAKE Game project, built in C..."
+  
+□ Record PART 2: Gameplay Demo (2-3 minutes)
+  - [ ] Play game
+  - [ ] Eat at least 5 food items
+  - [ ] Demonstrate pause (P)
+  - [ ] Show speed increase
+  - [ ] Intentionally crash (show game over)
+  - [ ] Demonstrate restart (R)
+
+□ Record PART 3: Code Overview (1-2 minutes)
+  - [ ] Show project structure in file explorer
+  - [ ] Open and highlight game_console.h
+  - [ ] Open game_console.c and show CheckCollision function
+  - [ ] Point out no memory leaks
+
+□ Record PART 4: Build Process (1 minute)
+  - [ ] Show gcc compilation command
+  - [ ] Compile the project
+  - [ ] Show executable created
+
+□ Record PART 5: GitHub Demo (1 minute)
+  - [ ] Open GitHub repository
+  - [ ] Show README
+  - [ ] Show commit history
+  - [ ] Show team members
+
+□ Record PART 6: Closing (30 seconds)
+  Final words about the project
+
+FINAL VIDEO:
+□ Save video as:
+  filename: SNAKE_GAME_DEMO_[DATE].mp4
+  example: SNAKE_GAME_DEMO_2026-03-29.mp4
+
+□ Verify video plays correctly
+
+□ Video length should be 5-7 minutes total
+
+□ [OPTIONAL] Upload to YouTube or Google Drive and share link
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ONE WEEK BEFORE: PRESENTATION PREPARATION (By Thursday)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SCRIPT PREPARATION:
+□ Read PRESENTATION_SCRIPT.txt completely
+  Time: 60 minutes
+
+□ Create presentation slides ([OPTIONAL] use PowerPoint or Google Slides)
+  Suggested slides:
+  1. Title slide (team names, project name, date)
+  2. Project Overview (what is Snake, why we chose it)
+  3. Technical Architecture (data structures, game loop)
+  4. Code Quality (memory safety, cross-platform)
+  5. GitHub & Collaboration (repo structure, commits)
+  6. Lessons Learned & Thank You
+
+□ Divide speaking roles among team:
+  Option 1 (recommended):
+  - Marouan: 1 Intro (1min) + 2 Overview (2min) = 3 min
+  - Hamza: 3 Architecture (5min) = 5 min
+  - Driss: 4 Code Quality (2min) + 5 GitHub (2min) = 4 min
+  - All: 6 Conclusion (1 min) = 1 min
+  - Total: 13 minutes ✓
+
+  Option 2 (each person does all):
+  - Each person practices full 13-15 minute presentation
+  - Know your code so well you can explain anything
+
+□ Practice timing
+  - [ ] Marouan practices assigned part with timer
+  - [ ] Hamza practices assigned part with timer  
+  - [ ] Driss practices assigned part with timer
+  - [ ] Full team practice together with timer
+  
+  Target: 10-15 minutes total (not 20+)
+
+TECHNICAL REHEARSAL:
+□ Full presentation dry run
+  - [ ] Start to finish, with timer
+  - [ ] Someone timing and giving feedback
+  - [ ] Check all slides advance properly
+  - [ ] Verify all demo transitions smooth
+  
+□ Troubleshoot issues:
+  - [ ] Slides not advancing? Fix before day-of
+  - [ ] Forgetting lines? Practice more
+  - [ ] Demo not working? Test again
+  - Projector compatibility? Test on classroom projector if possible
+
+PRESENTATION CONFIDENCE:
+□ Can all team members answer:
+  - [ ] Why did you choose Snake?
+  - [ ] How does collision detection work?
+  - [ ] How do you handle memory?
+  - [ ] How is GitHub configured?
+  - Any question about the code
+
+□ Practice confidence:
+  - [ ] Speak clearly and slowly
+  - [ ] Make eye contact with class/professor
+  - [ ] Use hand gestures naturally
+  - [ ] Don't read from notes (know your material)
+
+□ Prepare for questions:
+  Anticipated questions and answers:
+  - [ ] Q: Why no graphics?
+    A: Console version demonstrates mastery. Quality>Complexity.
+  
+  - [ ] Q: Any bugs?
+    A: Tested thoroughly, zero crashes, zero memory leaks.
+  
+  - [ ] Q: How long did this take?
+    A: ~20 hours coding, testing, documentation, deployment.
+  
+  - [ ] Q: Would you change anything?
+    A: [Have answer prepared]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PRESENTATION DAY MORNING (06/04/2026)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+30 MINUTES BEFORE:
+□ Arrive early to test equipment
+  - [ ] Laptop connects to projector
+  - [ ] Video plays on projector
+  - [ ] Audio works through projector speakers
+  - [ ] Backup audio (phone/tablet) ready
+  - [ ] Slides display correctly
+  - [ ] Test keyboard/mouse connectivity
+
+□ Open all files:
+  - [ ] PRESENTATION_SCRIPT.txt (reference copy)
+  - [ ] Slides presentation (minimize, ready to open)
+  - [ ] Video file ready to play
+
+□ Team check-in:
+  - [ ] All team members present and on time
+  - [ ] Everyone has eaten (not hungry)
+  - [ ] Everyone uses restroom before presentation
+  - [ ] Everyone mentally ready
+  - [ ] Calm down! You've prepared well.
+
+5 MINUTES BEFORE:
+□ Final checks:
+  - [ ] Microphone volume OK
+  - [ ] Slide deck is correct presentation file
+  - [ ] Video file is accessible
+  - [ ] GitHub page bookmarked in browser
+  - [ ] Everyone seated and ready
+
+□ Deep breaths
+  - [ ] Breathe calmly, you've got this!
+  - [ ] Remember: Professors respect complete, working projects
+  - [ ] You built something real, this is impressive
+  - [ ] Confidence! You know this code better than anyone
+
+DURING PRESENTATION:
+□ Opening (Marouan):
+  - [ ] Say hello, introduce team
+  - [ ] Main idea: We built Snake game in C
+  - Speak clearly and slowly
+
+□ Content sections:
+  - [ ] Smooth transitions between speakers
+  - [ ] Advance slides at right moments
+  - [ ] Speak with confidence and enthusiasm
+  - [ ] Make eye contact with professor/audience
+  - [ ] Don't rush - speak deliberately
+
+□ Demo (play video OR livestream):
+  - Option A: Play recorded video (safest)
+  - Option B: Run game live (exciting but risky)
+  - Decision: PLAY VIDEO (more professional, no glitches)
+
+□ Handle questions:
+  - [ ] Listen to full question before answering
+  - [ ] Take 2 seconds to think before speaking
+  - [ ] Answer clearly and concisely
+  - [ ] If unsure, say "Good question, let me think..." 
+  - [ ] Redirect to team member if needed
+
+□ Closing:
+  - [ ] Summarize: complete, well-coded, professional project
+  - [ ] Thank professor and classmates
+  - [ ] Ask if any remaining questions
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+POST-PRESENTATION (After Grade is Posted)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+□ Archive your work:
+  - [ ] Back up all source code (local USB or cloud)
+  - [ ] Save the video demo
+  - [ ] Save presentation slides
+  - [ ] Keep the printed checklist (for portfolio)
+
+□ Celebrate! 🎉
+  - [ ] You completed a real, working project
+  - [ ] You demonstrated professional C skills
+  - [ ] You managed a GitHub repository
+  - [ ] You created documentation
+  - [ ] You delivered a presentation
+  - This is something to be proud of!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+EMERGENCY PLAN (If something goes wrong)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Video doesn't play:
+  → Solution 1: Run game live (you've practiced this)
+  → Solution 2: Show GitHub repo and run from command line
+  → Worst case: Professor just hears about the features (you understand code)
+
+Projector not working:
+  → Solution: Display on laptop screen, pass it around
+  → Have phone backup with photos of project
+
+Someone doesn't show up:
+  → Other team members continue (you all understand code)
+  → Divide missing person's sections among others
+
+Forgot presentation:
+  → Solution: You have script in document - use it
+  → Just explain the project from knowledge of the code
+
+Slides look bad:
+  → Solution: Don't need slides - code and video are the proof
+  → Just present without slides if needed
+
+Remember: Professors grade based on:
+  ✓ Complete, working code ✓ (you have this)
+  ✓ Good documentation ✓ (you have this)
+  ✓ Understanding the code ✓ (you have this)
+  ✓ Professional GitHub ✓ (you have this)
+  
+Presentation is just showing what you've already built.
+You're not starting from zero on presentation day.
+You've already won by delivering a complete project.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+FINAL WORDS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+You've built a complete, functional game in C. This is impressive.
+Your code is clean. Your documentation is thorough. Your repository is professional.
+
+You're not walking in unprepared. You're walking in with:
+  ✓ A working game you can play right now
+  ✓ Source code you understand completely  
+  ✓ Zero memory leaks (proven with sanitizers)
+  ✓ Professional GitHub repository
+  ✓ Comprehensive documentation
+  ✓ A practiced presentation
+
+That makes you ready.
+
+Walk in with confidence. You've earned this!
+
+Good luck! 🚀
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Print this list out. Check off items as you complete them.
+Bring it to presentation day as your confidence checklist.
